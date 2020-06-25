@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { getSongs } from "../actions";
 import Song from "./Song";
 
+import '../css/index.css';
+
 const SongList = props => {
     console.log("props in songlist", props);
   useEffect(() => {
@@ -16,18 +18,21 @@ const SongList = props => {
   }
 
   return (
-    <>
-      <h4>Song List</h4>
+    <div className="slContainer">
+        <h4>Song List</h4>
+    <div className="songList">
+      
       {props.songs.length >= 1 ? (
-        <ol type="1">
+        <>
           {props.songs.map(song => (
-            <Song song={song} />
+            <Song song={song} artist={props.artist}/>
           ))}
-        </ol>
+        </>
       ) : (
         <p>Nothing to see here.</p>
       )}
-    </>
+    </div>
+    </div>
   );
 };
 
