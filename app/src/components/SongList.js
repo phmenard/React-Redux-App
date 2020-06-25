@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getSongs } from "../actions";
+import Song from "./Song";
 
 const SongList = props => {
     console.log("props in songlist", props);
@@ -20,7 +21,7 @@ const SongList = props => {
       {props.songs.length >= 1 ? (
         <ol type="1">
           {props.songs.map(song => (
-            <p>{song.title} </p>
+            <Song song={song} />
           ))}
         </ol>
       ) : (
