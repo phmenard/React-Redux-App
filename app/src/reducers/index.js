@@ -36,7 +36,7 @@ const appReducer = (state = initialState, action) => {
             }     
 
         default:
-            return "error";
+            return state;
             
 
 

@@ -8,7 +8,7 @@ const SongList = props => {
     // run action creator when the component mounts
     props.getSongs(props.artist);
     console.log(props.artist);
-  } );
+  }, [props.artist] );
 
   if (props.isLoading) {
     return <h2>Loading...</h2>;
@@ -16,7 +16,7 @@ const SongList = props => {
 
   return (
     <>
-      <h4>Additional Features</h4>
+      <h4>Song List</h4>
       {props.songs.length > 1 ? (
         <ol type="1">
           {props.songs.map(song => (
