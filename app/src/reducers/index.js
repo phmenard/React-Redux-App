@@ -29,7 +29,7 @@ const appReducer = (state = initialState, action) => {
             return {
                 ...state,
                 artist: state.artist,
-                songs: [...state.songs, action.payload],
+                songs: [...state.songs, ...action.payload],
                 isLoading: false,
                 error: ""
                 
