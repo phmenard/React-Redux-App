@@ -129,6 +129,9 @@ table {
 html {
   font-size: 62.5%;
 }
+.App {
+  text-align: center;
+}
 header {
   display: flex;
   justify-content: space-evenly;
@@ -169,12 +172,37 @@ header .right-image img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid green;
   width: 80%;
 }
 .song {
-  border: 1px solid blue;
+  background-color: #c2bfbb;
+  border-radius: 5px;
   font-size: 2rem;
   padding: 5px;
   margin: 10px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-container footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+  background-color: #7dbae6;
+  margin-top: 1%;
+  width: 98%;
+  border-radius: 3px;
+}
+.footer-container footer h3 {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.footer-container footer a {
+  color: unset;
+}
+.footer-container footer a:hover {
+  color: white;
 }
