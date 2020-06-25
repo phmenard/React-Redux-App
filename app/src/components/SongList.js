@@ -17,7 +17,7 @@ const SongList = props => {
   return (
     <>
       <h4>Song List</h4>
-      {props.songs.length > 1 ? (
+      {props.songs.length >= 1 ? (
         <ol type="1">
           {props.songs.map(song => (
             <p>{song.title} </p>
