@@ -8,10 +8,11 @@ const Artist = (props) => {
  
   const handleChanges = e => {
     setNewArtistText(e.target.value);
+    
   };
 
   return (
-    <div>
+    <div className="artist-container">
       
           <input
             className="title-input"
@@ -23,6 +24,7 @@ const Artist = (props) => {
           <button
             onClick={() => {
                props.changeArtist(newArtistText);
+               setNewArtistText("");
             }}
           >
             Update artist

@@ -19,13 +19,13 @@ const SongList = props => {
 
   return (
     <div className="slContainer">
-        <h4>Song List</h4>
+        <h4>Song List for {props.artist} </h4>
     <div className="songList">
       
       {props.songs.length >= 1 ? (
         <>
-          {props.songs.map(song => (
-            <Song song={song} artist={props.artist}/>
+          {props.songs.map((song, i) => (
+            <Song key={i} song={song} artist={props.artist}/>
           ))}
         </>
       ) : (
