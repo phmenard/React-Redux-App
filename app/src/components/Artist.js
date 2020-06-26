@@ -40,9 +40,7 @@ const Artist = (props) => {
 
 const mapStateToProps = state => {
   return { 
-      artist: state.artist,
-      songs: state.songs,
-      isLoading: state.isLoading
+      artist: state.artist      
     };
 };
 
