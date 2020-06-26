@@ -175,11 +175,15 @@ header .right-image img {
   width: 80%;
 }
 .song {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #c2bfbb;
   border-radius: 5px;
   font-size: 2rem;
   padding: 5px;
   margin: 10px;
+  width: 250px;
 }
 .footer-container {
   display: flex;
