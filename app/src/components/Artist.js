@@ -46,4 +46,4 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = { changeArtist };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Artist);
+export default connect(mapStateToProps,mapDispatchToProps)(Artist);

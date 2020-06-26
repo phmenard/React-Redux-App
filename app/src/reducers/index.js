@@ -12,9 +12,9 @@ const appReducer = (state = initialState, action) => {
             return {
                 ...state,
                 artist: action.payload,
-                songs: [],
+                /*songs: [],
                 isLoading: true,
-                error: ""
+                error: ""*/
                 
             }
             
