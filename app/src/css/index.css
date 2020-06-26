@@ -163,6 +163,7 @@ header .right-image img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 .slContainer h4 {
   margin-bottom: 1%;
@@ -188,6 +189,10 @@ header .right-image img {
 .footer-container {
   display: flex;
   justify-content: center;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  bottom: 0;
+  width: 100%;
 }
 .footer-container footer {
   display: flex;
